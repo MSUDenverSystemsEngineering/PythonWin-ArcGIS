@@ -125,9 +125,9 @@ Try {
 		Show-InstallationProgress
 
 		## <Perform Pre-Installation tasks here>
-		If (Test-Path -Path "C:\Python27\ArcGIS10.7\Lib\site-packages") { Copy-Item "$dirFiles\pywin32-218.win32-py2.7\PLATLIB" -Destination "C:\Python27\ArcGIS10.7\Lib\site-packages" -Recurse
+		If (Test-Path -Path "C:\Python27\ArcGIS10.7\Lib\site-packages") { Copy-Item "$dirFiles\pywin32-218.win32-py2.7\PLATLIB\*" -Destination "C:\Python27\ArcGIS10.7\Lib\site-packages" -Recurse
     }
-		If (Test-Path -Path "C:\Python27\ArcGIS10.7\Lib\site-packages") { Copy-Item "$dirFiles\pywin32-218.win32-py2.7\SCRIPTS" -Destination "C:\Python27\ArcGIS10.7\Lib\site-packages" -Recurse
+		If (Test-Path -Path "C:\Python27\ArcGIS10.7\Lib\site-packages") { Copy-Item "$dirFiles\pywin32-218.win32-py2.7\SCRIPTS\*" -Destination "C:\Python27\ArcGIS10.7\Lib\site-packages" -Recurse
     }
 
 		##*===============================================
