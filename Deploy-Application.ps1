@@ -153,7 +153,7 @@ Try {
 		[string]$installPhase = 'Post-Installation'
 
 		## <Perform Post-Installation tasks here>
-		If (Test-Path -Path "$envCommonStartMenuPrograms\ArcGIS\Python2.7") { Copy-File -Path "$dirSupportFiles\Pythonwin.lnk" -Destination "$envCommonStartMenuPrograms\ArcGIS\Python2.7"
+		If (Test-Path -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ArcGIS\Python 2.7") { Copy-File -Path "$dirSupportFiles\Pythonwin.lnk" -Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ArcGIS\Python 2.7"
 		}
 
 		## Display a message at the end of the install
